@@ -49,7 +49,7 @@ services:
       - CI=1
       - GITHUB_WORKSPACE=$GITHUB_WORKSPACE
     env_file:
-      - ./.env
+      - /mnt/data/zksync-era/testnet-sepolia-config.env
     extra_hosts:
       - "host:host-gateway"
     profiles:
