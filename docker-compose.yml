@@ -49,7 +49,7 @@ services:
       - SCCACHE_ERROR_LOG=/tmp/sccache_log.txt
       - SCCACHE_GCS_RW_MODE=READ_WRITE
       - CI=1
-      - DATABASE_URL=postgres://username:password2024@postgres:5432/zksync
+      - DATABASE_URL=postgres://postgres:password2024@postgres:5432/zksync
       - ETH_CLIENT_WEB3_URL=https://zksync-sepolia.infura.io/v3/244d74b37f9247ea8e59919c077fe736
       - GITHUB_WORKSPACE=$GITHUB_WORKSPACE
     env_file:
