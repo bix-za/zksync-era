@@ -50,6 +50,7 @@ services:
       - SCCACHE_GCS_RW_MODE=READ_WRITE
       - CI=1
       - DATABASE_URL=postgres://postgres:password2024@postgres:5432/zksync
+      - DATABASE_PROVER_URL=postgres://postgres:password2024@postgres:5432/prover_database
       - ETH_CLIENT_WEB3_URL=https://zksync-sepolia.infura.io/v3/244d74b37f9247ea8e59919c077fe736
       - GITHUB_WORKSPACE=$GITHUB_WORKSPACE
     env_file:
