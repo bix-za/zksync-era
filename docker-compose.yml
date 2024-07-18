@@ -26,7 +26,9 @@ services:
         target: /var/lib/postgresql/data
     environment:
       # We bind only to 127.0.0.1, so setting insecure password is acceptable here
+      - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=password2024
+      - POSTGRES_DB=zksync
 
   # This is specific to runner
   zk:
